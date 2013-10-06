@@ -1,0 +1,61 @@
+body {
+	margin: 10px;
+}
+
+/* In-line Text Editor */
+
+.inline-editor {
+	overflow: hidden;
+	width: 100%;
+}
+input {
+	float:left;
+	width: 75%;
+}
+.save {
+	width: 30px;
+	height: 25px;
+	padding: 5px;
+	float:left;
+}
+/*.animate-left {
+	-webkit-transition: all 0.5s 0.25s;
+}
+
+.animate-left-collapsed {
+	-webkit-transform: translate(-120%);
+	-webkit-transition: all 0.5s;
+}*/
+.offthepage {
+	-webkit-transform: translate(-120%);
+	-webkit-transition: all 0.5s;
+}
+/* Profile-form */
+
+.profile-form {
+	display: none;
+}
+.active {
+	display: block;
+}
+.center {
+	text-align: center;
+}
+h2 {
+	padding-left: 10px;
+}
+h2:hover {
+	background-color: powderblue;
+	border-radius: 5px;
+}
+p {
+	padding: 0px 10px;
+}
+p:hover{
+	background-color: powderblue;
+	border-radius: 10px;
+}
+.pname {
+	font-weight: bolder;
+	font-size: 20px;
+}
