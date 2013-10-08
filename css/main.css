@@ -18,22 +18,18 @@ input {
 	padding: 5px;
 	float:left;
 }
-/*.animate-left {
-	-webkit-transition: all 0.5s 0.25s;
-}
-
-.animate-left-collapsed {
-	-webkit-transform: translate(-120%);
-	-webkit-transition: all 0.5s;
-}*/
-.offthepage {
-	-webkit-transform: translate(-120%);
-	-webkit-transition: all 0.5s;
+.title {
+	font-weight: bolder;
+	font-size: 16px;
+	color: #285e8e;
 }
 /* Profile-form */
 
 .profile-form {
 	display: none;
+}
+.hide {
+	display:none;
 }
 .active {
 	display: block;
@@ -54,8 +50,4 @@ p {
 p:hover{
 	background-color: powderblue;
 	border-radius: 10px;
-}
-.pname {
-	font-weight: bolder;
-	font-size: 20px;
 }
