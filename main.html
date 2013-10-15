@@ -6,45 +6,60 @@
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/jquery-editable/css/jquery-editable.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/main.css">
-  <title>Client6.1 Hide-A-Form</title>
+  <title>Client6.2 Edit in Place</title>
 </head>
 
 <body>
 	<div class="profile-page">
 
 		<h1 class="center">Profile</h1>
-	 	<div class="button">
-			<button type="button" class="add-profile btn btn-primary btn-block">Show Form</button>
-	 	</div/>
-	 	
-	 	<div class="profile-form">
-	 		<form role="form">
-			  <div class="form-group">
-			    <label for="Name">Name</label>
-			    <input type="text" class="form-control" id="name" placeholder="Enter name">
-			  </div>
-			  <div class="form-group">
-			    <label for="Bio">Bio</label>
-			    <input type="text" class="form-control" id="bio" placeholder="Enter your bio">
-			  </div>
-			  <div class="form-group">
-			    <label for="fave-books">Favorite Books</label>
-			    <input type="text" class="form-control" id="fave-books" placeholder="Enter your favorite books separated by commas.">
-			  </div>
-			  <div class="form-group">
-			    <label for="fave-jslibs">Favorite Javascript Libraries</label>
-			    <input type="text" class="form-control" id="fave-jslibs" placeholder="Enter your favorite javascript libraries separated by commas.">
-			  </div>
-			  <button type="button" class="submit btn btn-default">Submit</button>
-			</form>
-	 	</div>
 
-	 	<div class="display-profile">
-	 	</div>
-
-	 	
+        <div class="display-profile">
+        	<div class="dataEl">
+        		<span class="title">My name is:<br></span>
+        		<p class="pname">Debra Zapata</p>
+        		<div class="inline-editor hide">
+        			<form class="editable">
+        				<input type="text" class="form-control">
+        				<button type="button" class="save btn btn-block btn-primary">✓</button>
+        			</form>
+        		</div>
+        	</div>
+        	<div class="dataEl">
+        		<span class="title">Short bio:<br></span>
+        		<p class="pname">I love purple</p>
+        		<div class="inline-editor hide">
+        			<form class="editable">
+        				<input type="text" class="form-control">
+        				<button type="button" class="save btn btn-block btn-primary">✓</button>
+        			</form>
+        		</div>
+        	</div>
+        	<div class="dataEl">
+        		<span class="title">My favorite books are:<br></span>
+        		<p class="pname">Bridge to Terabithia, The Giver</p>
+        		<div class="inline-editor hide">
+        			<form class="editable">
+        				<input type="text" class="form-control">
+        				<button type="button" class="save btn btn-block btn-primary">✓</button>
+        			</form>
+        		</div>
+        	</div>
+        	<div class="dataEl">
+        		<span class="title">My favorite JS libraries are:<br></span>
+        		<p class="pname">jQuery, Handlebars</p>
+        		<div class="inline-editor hide">
+        			<form class="editable">
+        				<input type="text" class="form-control">
+        				<button type="button" class="save btn btn-block btn-primary">✓</button>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+	 
 
 	</div>
+
 
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
